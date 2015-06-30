@@ -5,10 +5,7 @@
  */
 package learning;
 
-/**
- *
- * @author viswanathankashi
- */
+
 import java.util.Scanner ;
 public class FirstOne{
     public static void main(String[] args) {

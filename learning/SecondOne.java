@@ -5,10 +5,6 @@
  */
 package learning;
 
-/**
- *
- * @author viswanathankashi
- */
 import java.util.Scanner;
 public class SecondOne {
 
