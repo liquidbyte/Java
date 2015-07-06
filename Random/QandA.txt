@@ -27,3 +27,56 @@ public class JavaApplication8 {
 }
 ----------------------------------------------------------------
 Question#2
+Write a function that implements a substitution cipher. In a substitution cipher one letter is substituted for another to garble the message. For example A -> B, B -> C, C -> D etc. your function should take two parameters, the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. Your function should return a string that is the encrypted version of the message. example encrypt('hello world', 'bcdefghijklmnopqrstuvwxyza') 
+
+Answer1
+import java.util.Arrays;
+import java.lang.StringBuilder;
+public class JavaApplication8 {
+    public static void main(String[] args)
+        {
+            String a ="hello world";
+            String oalp = "abcdefghijklmnopqrstuvwxyz";
+            String nalp = "bcdefghijklmnopqrstuvwxyza";
+          //  String[] outputStr=new String[a.length()];
+            StringBuilder outputStr= new    StringBuilder();
+            char[] newAlpha = nalp.toCharArray();
+            char[] oldAlpha = oalp.toCharArray();
+            
+            for(int i=0;i<a.length();i++){
+                if (a.charAt(i)== ' '){
+                    outputStr.append(a.charAt(i));
+                }else {
+                for(int j=0;j<26;j++){
+                    if(a.charAt(i)==oldAlpha[j]){
+                        outputStr.append(newAlpha[j]) ;
+                    }
+                }
+                }
+            }
+            System.out.println(outputStr.toString());
+        }
+}
+
+----------------------------------------------------------------
+Question#3
+Write a function called RemDup that takes a string and creates a new string by only adding those characters that are not already present. In other words, there will never be a duplicate letter added to the new string. For example: if input is " hello World!!" then the output should be "helo wrd!" 
+
+import java.lang.StringBuilder;
+public class JavaApplication8 {
+    public static void main(String[] args)
+        {
+            StringBuilder result = new StringBuilder();
+            String alpha = "hello world!!";
+            for(int i=0;i<alpha.length();i++){
+                String currentChar = alpha.substring(i,i+1);
+                if(result.indexOf(currentChar)<0){
+                    result.append(alpha.charAt(i));
+                }
+            }
+            System.out.println(result);
+            
+        }   
+}
+
+
