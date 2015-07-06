@@ -1,0 +1,27 @@
+Code
+public class JavaApplication8 {
+    public static void main(String[] args)
+        {
+            String alpha = "hello world!!";
+            for(int i=0;i<alpha.length();i++){
+                System.out.println(alpha.substring(i,i+1));
+            }
+        }   
+}
+
+Output
+run:
+h
+e
+l
+l
+o
+ 
+w
+o
+r
+l
+d
+!
+!
+BUILD SUCCESSFUL (total time: 0 seconds)
