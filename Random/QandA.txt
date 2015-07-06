@@ -9,4 +9,21 @@ public static void main(String[] args) {
     System.out.println(str.split(findStr,-1).length-1);
 }
 
+Answer2 (Best Answer)
+public class JavaApplication8 {
+    public static void main(String[] args)
+        {System.out.println(occurence("banana","na"));}
+    public static int occurence(String main, String sub)
+        {	int lastIndex = 0;
+    	int count = 0;
+    	while (lastIndex != -1) {
+    		lastIndex = main.indexOf(sub, lastIndex);
+    		if (lastIndex != -1) {
+    			count++;
+    			lastIndex += 1;
+    		}
+    	}
+        return count;}
+}
 ----------------------------------------------------------------
+Question#2
