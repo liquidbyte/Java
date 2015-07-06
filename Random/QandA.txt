@@ -1,0 +1,12 @@
+Question#1
+Write a function that counts how many times a substring occurs in a string, example count('is', 'Mississippi') result should be 2. count('nana', 'banana') result should be 1 
+Answer1
+public static void main(String[] args) {
+    // TODO code application logic here
+    String str="banana";
+    String findStr = "na";
+
+    System.out.println(str.split(findStr,-1).length-1);
+}
+
+----------------------------------------------------------------
