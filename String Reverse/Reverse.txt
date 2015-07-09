@@ -1,0 +1,19 @@
+Program to reverse a String
+
+
+Option 1
+--------------
+package javaapplication8;
+/**
+ *
+ * @author liquidbyte
+ */
+import java.lang.StringBuilder ;
+public class JavaApplication8 {
+    public static void main(String[] args)
+        {
+            String alpha = "hello world!!";
+            StringBuilder reverseS=new StringBuilder(alpha).reverse();
+            System.out.println(reverseS);
+        }   
+}
